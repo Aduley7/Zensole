@@ -1,175 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Zensole | Smart Insole Pain Relief</title>
-<style>
-  /* Reset and base */
-  * {
-    margin: 0; padding: 0; box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  body {
-    background: #fff;
-    color: #333;
-    line-height: 1.6;
-  }
-  a {
-    color: #0077ff;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-
-  /* Container */
-  .container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
-  }
-
-  /* Header */
-  header {
-    background: #0077ff;
-    color: white;
-    padding: 20px 0;
-  }
-  header .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
-
-  /* Hero */
-  .hero {
-    background: #e6f0ff;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .hero button {
-    background: #0077ff;
-    color: white;
-    border: none;
-    padding: 15px 40px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 6px;
-  }
-  .hero button:hover {
-    background: #005bb5;
-  }
-
-  /* Features */
-  .features {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 0;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .feature-box {
-    flex: 1 1 250px;
-    background: #f5faff;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  .feature-box h3 {
-    margin-bottom: 15px;
-    color: #0077ff;
-  }
-  .feature-box p {
-    font-size: 1rem;
-    color: #555;
-  }
-
-  /* About */
-  .about {
-    background: #f0f4ff;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  .about h2 {
-    margin-bottom: 15px;
-    color: #004a99;
-  }
-  .about p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 1.1rem;
-    color: #444;
-  }
-
-  /* Footer */
-  footer {
-    background: #0077ff;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-
-  /* Responsive */
-  @media(max-width: 768px) {
-    .features {
-      flex-direction: column;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zensole | Smart Insole for Pain Relief</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #d6a4e9;
+      --accent-color: #fff0f9;
+      --text-color: #333;
+      --button-color: #b76ee0;
     }
-  }
-</style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--accent-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-color);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 2rem;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: #f3d7f7;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      padding: 12px 30px;
+      background: var(--button-color);
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .feature {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media(max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Zensole</h1>
+  </header>
 
-<header>
-  <div class="container">
-    <div class="logo">ZENSOLE</div>
-  </div>
-</header>
+  <section class="hero">
+    <h2>Smart Insole for Period & Pregnancy Pain Relief</h2>
+    <p>Introducing Zensole — a breakthrough in wearable technology, designed to relieve pain using customizable vibration and heat therapy modes.</p>
+    <button>Learn More</button>
+  </section>
 
-<section class="hero">
-  <div class="container">
-    <h1>Smart Insole for Period & Pregnancy Pain Relief</h1>
-    <p>Experience soothing vibration therapy and adjustable heat to relieve back, leg, and stomach pain naturally and comfortably.</p>
-    <button>Shop Now</button>
-  </div>
-</section>
+  <section class="section">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Period Mode</h3>
+        <p>Targeted relief for menstrual cramps using rhythmic vibration and warmth.</p>
+      </div>
+      <div class="feature">
+        <h3>Pregnancy Mode</h3>
+        <p>Soothing support for lower back and leg pain during pregnancy with gentle stimulation.</p>
+      </div>
+      <div class="feature">
+        <h3>Heating Pad</h3>
+        <p>Adjustable insole heating to keep you comfortable and pain-free anytime.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="features container">
-  <div class="feature-box">
-    <h3>Period Mode</h3>
-    <p>Custom vibration patterns designed to ease menstrual cramps and discomfort effectively.</p>
-  </div>
-  <div class="feature-box">
-    <h3>Pregnancy Mode</h3>
-    <p>Gentle and safe stimulation tailored to relieve pregnancy-related aches and pains.</p>
-  </div>
-  <div class="feature-box">
-    <h3>Heating Pad</h3>
-    <p>Adjustable built-in heating pad to enhance comfort and accelerate pain relief.</p>
-  </div>
-</section>
+  <section class="section" style="background: #fdf0fc">
+    <h2>Why Zensole?</h2>
+    <p>Designed by innovators for women's wellness, Zensole merges science with style. Whether you’re managing period pain or pregnancy discomfort, Zensole supports your stride.</p>
+  </section>
 
-<section class="about">
-  <h2>Why Choose Zensole?</h2>
-  <p>Zensole is designed with care to provide natural, drug-free pain relief for women during their most sensitive times. Our smart insole combines modern technology with comfort, allowing you to stay active and pain-free.</p>
-</section>
-
-<footer>
-  <div class="container">&copy; 2025 Zensole. All rights reserved.</div>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Zensole. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
